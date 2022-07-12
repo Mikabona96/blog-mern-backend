@@ -15,7 +15,7 @@ import  authRoutes from './routes/auth.js';
 const app = express();
 
 // db
-mongoose.connect(`${process.env.DATABASE_CLOUD}`)
+mongoose.connect(`${process.env.DATABASE_LOCAL}`)
 .then(() => console.log('DB ok'))
 .catch((err) => console.log('DB error', err))
 
